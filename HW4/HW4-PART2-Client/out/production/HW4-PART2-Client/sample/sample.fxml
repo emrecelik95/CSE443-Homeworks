@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="498.0" prefWidth="870.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="402.0" prefWidth="871.0">
+         <children>
+            <Label layoutX="143.0" layoutY="100.0" text="Edge Size">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="363.0" layoutY="25.0" text="Bulut Çizge A.Ş">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="edgeSizeText" layoutX="218.0" layoutY="95.0" prefHeight="28.0" prefWidth="68.0" />
+            <Label layoutX="613.0" layoutY="57.0" prefHeight="18.0" prefWidth="68.0" text="Services">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="444.0" layoutY="156.0" prefHeight="232.0" prefWidth="399.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="226.0" prefWidth="422.0">
+                     <children>
+                        <TextArea fx:id="resText" prefHeight="226.0" prefWidth="425.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <ScrollPane layoutX="36.0" layoutY="156.0" prefHeight="232.0" prefWidth="356.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="211.0" prefWidth="327.0">
+                     <children>
+                        <VBox fx:id="vbox" layoutX="6.0" layoutY="10.0" prefHeight="193.0" prefWidth="290.0">
+                           <children>
+                              <TextField prefHeight="28.0" prefWidth="235.0" />
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+              </content>
+            </ScrollPane>
+            <Button layoutX="549.0" layoutY="81.0" mnemonicParsing="false" onAction="#GetMST" prefHeight="28.0" prefWidth="184.0" text="Minimum Spanning Tree">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="549.0" layoutY="116.0" mnemonicParsing="false" onAction="#GetIncMatrix" prefHeight="28.0" prefWidth="184.0" text="Incidence Matrix">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="creditText" layoutX="403.0" layoutY="80.0" prefHeight="28.0" prefWidth="68.0" />
+            <Label layoutX="344.0" layoutY="85.0" text="Credit">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="buttonAnchor" layoutX="353.0" layoutY="116.0" prefHeight="28.0" prefWidth="138.0">
+               <children>
+                  <Button layoutX="6.0" mnemonicParsing="false" onAction="#SetCredit" prefHeight="28.0" prefWidth="126.0" text="Set Credit">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</GridPane>

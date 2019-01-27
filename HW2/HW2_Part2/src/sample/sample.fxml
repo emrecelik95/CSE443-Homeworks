@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="500.0" prefWidth="800.0">
+         <children>
+            <ComboBox fx:id="suitComboBox" layoutX="60.0" layoutY="163.0" prefWidth="150.0" promptText="Dec" />
+            <Text layoutX="68.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suit Type " textAlignment="CENTER" wrappingWidth="133.5270004272461">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="245.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exoskeleton Armored Suits" textAlignment="CENTER" wrappingWidth="310.12700271606445">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="flamethrowerBox" layoutX="316.0" layoutY="145.0" mnemonicParsing="false" text="Flamethrower" />
+            <Text layoutX="471.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accessorries" textAlignment="CENTER" wrappingWidth="133.5270004272461">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="autoRifleBox" layoutX="546.0" layoutY="145.0" mnemonicParsing="false" text="AutoRifle" />
+            <CheckBox fx:id="rocketLauncherBox" layoutX="316.0" layoutY="189.0" mnemonicParsing="false" text="RocketLauncher" />
+            <CheckBox fx:id="laserBox" layoutX="546.0" layoutY="189.0" mnemonicParsing="false" text="Laser" />
+            <Button layoutX="290.0" layoutY="264.0" mnemonicParsing="false" onAction="#OnPressedGet" text="Get Total Price And Total Weight" />
+            <Text fx:id="resultText" layoutX="104.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="588.5270004272461">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="flameCount" layoutX="443.0" layoutY="140.0" prefHeight="28.0" prefWidth="79.0" />
+            <ComboBox fx:id="rocketCount" layoutX="443.0" layoutY="184.0" prefHeight="28.0" prefWidth="79.0" />
+            <ComboBox fx:id="laserCount" layoutX="644.0" layoutY="184.0" prefHeight="28.0" prefWidth="79.0" />
+            <ComboBox fx:id="rifleCount" layoutX="644.0" layoutY="140.0" prefHeight="28.0" prefWidth="79.0" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>

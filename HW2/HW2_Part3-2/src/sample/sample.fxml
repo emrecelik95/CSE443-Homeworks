@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="500.0" prefWidth="800.0">
+         <children>
+            <ChoiceBox fx:id="planeBox" layoutX="457.0" layoutY="106.0" prefWidth="150.0" />
+            <Button layoutX="348.0" layoutY="191.0" mnemonicParsing="false" onAction="#OnPressedOrder" text="Order Plane">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Text fx:id="resultText" layoutX="45.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="710.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Text>
+            <Text fx:id="resultText1" layoutX="400.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Model" textAlignment="CENTER" wrappingWidth="264.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="marketBox" layoutX="169.0" layoutY="106.0" prefWidth="150.0" />
+            <Text fx:id="resultText11" layoutX="112.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Market" textAlignment="CENTER" wrappingWidth="264.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
